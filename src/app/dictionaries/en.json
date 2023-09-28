@@ -19,6 +19,9 @@
       "heading": {
         "title": "Wait ! your order in progress.",
         "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing "
+      },
+      "offer": {
+        "title": "<span class='text-crayola'>ONE TIME ONLY</span> special price for 6 extra Clarifion for only $14 each ($84.00 total!)"
       }
     }
   },
