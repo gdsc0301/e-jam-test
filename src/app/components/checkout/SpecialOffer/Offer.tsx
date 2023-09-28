@@ -1,10 +1,11 @@
+import Image from "next/image";
 
 const Offer = ({dictionary}: {dictionary: any}) => {
   return (
     <div className="offer w-full p-10 rounded-[10px] bg-neutral-50">
       <div className="details grid lg:grid-cols-2">
         <div className="image">
-          <img src="/images/offer.png" alt="offer" />
+          <Image src="/images/offer.png" fill alt="Satisfaction 30 days guarantee" />
         </div>
         <div className="content">
           <h1 className="mb-6">{dictionary["thirdStep"]["offer"]["heading"]["title"]}</h1>
