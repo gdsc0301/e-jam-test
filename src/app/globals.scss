@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply
+    antialiased
+    text-davy-gray;
+
+  h1 {
+    @apply
+      text-black text-center text-5xl
+      capitalize break-words;
+  }
+}
