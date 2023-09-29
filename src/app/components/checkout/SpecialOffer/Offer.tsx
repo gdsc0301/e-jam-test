@@ -31,7 +31,7 @@ const Offer = ({dictionary}: {dictionary: any}) => {
                 </div>
                 <div className="flex items-center gap-[10px] client-name text-sm text-zinc-800 font-bold leading-none">
                   {reviewDict["name"]}
-                  <div className="flex items-center text-emerald-400 text-xs font-normal">
+                  <div className="flex items-center text-emerald-400 text-xs font-normal leading-none">
                     <Image src="/icons/checkout/verified-badge.svg" width={16} height={16} className="mr-[10px]" alt="" aria-hidden />
                     {dict["verifiedCustomer"]}
                   </div>
