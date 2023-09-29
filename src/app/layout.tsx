@@ -4,6 +4,7 @@ import { Manrope } from 'next/font/google'
 import { getDictionary } from './helpers/Dict'
 import Header from './components/Header'
 import Footer from './components/Footer'
+import { Analytics } from '@vercel/analytics/react'
 
 const manrope = Manrope({ subsets: ['latin'] })
 
@@ -27,6 +28,7 @@ export default async function RootLayout({children}: {children: React.ReactNode}
         {children}
         </main>
         <Footer dictionary={dict} />
+        <Analytics />
       </body>
     </html>
   )
