@@ -12,4 +12,8 @@ body {
       text-black text-center text-5xl
       capitalize break-words;
   }
+
+  div {
+    @apply block;
+  }
 }

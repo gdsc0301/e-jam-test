@@ -5,7 +5,7 @@ import HeaderTop from "./parts/HeaderTop";
 const Header = async ({dictionary}:{dictionary: Dictionary}) => {
 
   return (
-    <header className="fixed top-0 left-0 w-full bg-white">
+    <header className="fixed top-0 left-0 w-full bg-white z-10">
       <HeaderTop dict={dictionary} />
       <div className="py-[30px] container flex justify-between items-center">
         <Image src="/logos/clarifon.png" alt="Clarifon" width={192} height={36} />

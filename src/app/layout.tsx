@@ -1,6 +1,9 @@
 import './globals.scss'
 import type { Metadata } from 'next'
 import { Manrope } from 'next/font/google'
+import { getDictionary } from './helpers/Dict'
+import Header from './components/Header'
+import Footer from './components/Footer'
 
 const manrope = Manrope({ subsets: ['latin'] })
 
@@ -13,10 +16,18 @@ export const metadata: Metadata = {
   }
 }
 
-export default function RootLayout({children}: {children: React.ReactNode}) {
+export default async function RootLayout({children}: {children: React.ReactNode}) {
+  const dict = await getDictionary();
+
   return (
     <html lang="en">
-      <body className={`${manrope.className} lg:pt-36 min-h-screen`}>{children}</body>
+      <body className={`${manrope.className} relative lg:pt-36 lg:pb-[104px] min-h-screen`}>
+        <Header dictionary={dict} />
+        <main>
+        {children}
+        </main>
+        <Footer dictionary={dict} />
+      </body>
     </html>
   )
 }
