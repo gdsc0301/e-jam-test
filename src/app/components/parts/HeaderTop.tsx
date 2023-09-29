@@ -22,7 +22,7 @@ const HeaderTop = ({dict}: {dict: any}) => {
   }, [])
 
   return (
-    <div className="h-[42px] md:h-[50px] flex items-center bg-gunmetal">
+    <div className="h-[42px] lg:h-[50px] flex items-center bg-gunmetal">
       <div className="container relative flex items-center w-full h-full mx-auto lg:flex lg:justify-between">
         {useSwiper ? (
           <>
