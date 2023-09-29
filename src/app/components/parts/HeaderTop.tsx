@@ -22,11 +22,13 @@ const HeaderTop = ({dict}: {dict: any}) => {
   }, [])
 
   return (
-    <div className="h-[50px] flex items-center bg-gunmetal">
-      <div className="container w-full mx-auto lg:flex lg:justify-between">
+    <div className="h-[42px] md:h-[50px] flex items-center bg-gunmetal">
+      <div className="container relative flex items-center w-full h-full mx-auto lg:flex lg:justify-between">
         {useSwiper ? (
           <>
-            <button className="prevSlide lg:hidden"></button>
+            <button className="prevSlide lg:hidden absolute left-0 top-0 h-full flex items-center z-10">
+              <Image src="/icons/header/arrow-left.svg" width={20} height={20} alt="" />
+            </button>
             <Swiper
               className="w-full"
               slidesPerView={1}
@@ -55,7 +57,9 @@ const HeaderTop = ({dict}: {dict: any}) => {
                 </SwiperSlide>
               ))}
             </Swiper>
-            <button className="nextSlide lg:hidden"></button>
+            <button className="nextSlide lg:hidden absolute right-0 top-0 h-full flex items-center z-10">
+              <Image src="/icons/header/arrow-right.svg" width={20} height={20} alt="" />
+            </button>
           </>
         ) : (
           dict["header"]["top-texts"].map((text: string, i: number) => (

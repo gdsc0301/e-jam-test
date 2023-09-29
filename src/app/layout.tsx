@@ -21,7 +21,7 @@ export default async function RootLayout({children}: {children: React.ReactNode}
 
   return (
     <html lang="en">
-      <body className={`${manrope.className} relative lg:pt-36 lg:pb-[104px] min-h-screen`}>
+      <body className={`${manrope.className} relative pt-[102px] md:pt-36 pb-[102px] md:pb-[104px] min-h-screen`}>
         <Header dictionary={dict} />
         <main>
         {children}
